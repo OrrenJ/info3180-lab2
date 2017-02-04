@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/profile.css">
+{% endblock %}
+
+{% block main %}
+<h1 class="page-header">Profile</h1>
+<div class="profile-container">
+	<div class="img-container">
+		<img src="{{ url_for('static', filename='prof_p.jpg') }}" />
+	</div>
+	<div class="info-container">
+		<h3>Señor Uno</h3>
+		<div class="info-container-2">
+			<p>Today's date is {{ date }}</p>
+			<hr>
+			<p><strong>Username: </strong>Sr-1</p>
+			<p><strong>ID Number: </strong>5746132512</p>
+			<p><strong>Age: </strong>22</p>
+			<p><strong>Gender: </strong>Male</p>
+			<hr>
+			<p>Soy numero uno!</p>
+		</div>
+	</div>
+</div>
+{% endblock %}
